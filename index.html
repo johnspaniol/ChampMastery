@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>League of Legends</title>
+  <meta charset="utf-8">
+  <meta name="description" content="League of Legends">
+  <meta name="author" content="John Spaniol">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>League of Legends</h1>
+    <h2>Champion Mastery Lookup</h2>
+    <p>John Spaniol<br/>Data Analyst</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>What is a champion?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A champion is a being or person that has been summoned to wage battle in the League of Legends on the Fields of Justice. They are the player-controlled character in League of Legends.</p>
+
+<p>League of Legends is competitive PvP play: a multiplayer online battle arena game (MOBA). Learn more and get started on leagueoflegends.com</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Mastery points</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>As you play each champion you will earn points after the match. Eventually though practice and time you will be able to increase your skill level currently up to 7. The premise of mastery points is to show your allied and opponents just how familliar you are with that particular champion. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Other information</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The data pulled from Riot&#39;s API will also tell you other interesting facts. It can also tell you if you have unlocked a Chest for that champion this season or not.  </p>
+
+<p>Though not included in this data project you can also monitor the last time you played a particular champion so you won&#39;t get &#39;a little rusty&#39; in your skill!</p>
+
+<p>here is a small sample of the output!</p>
+
+<pre><code class="r">head(CurrentSummoner)
+</code></pre>
+
+<pre><code>##   Champion Mastery Lvl Points Points to Next Lvl Granted Chest Tokens
+## 1 Vladimir           5  82508                  0         FALSE      0
+## 2    Brand           5  54057                  0          TRUE      0
+## 3    Teemo           5  30569                  0         FALSE      0
+## 4 Malzahar           5  29337                  0          TRUE      0
+## 5     Sion           5  24338                  0          TRUE      0
+## 6   Veigar           5  21907                  0          TRUE      0
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Closing thoughts</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Example summoner names to use &quot;WildTurtle&quot; &quot;Dyrus&quot; &quot;Quas&quot;</p>
+
+<p>Though not required originally, after typing a summoner name into the text box you will have to click submit. The code currently searches each champion name retrieved by number and looks up it&#39;s name through Riot&#39;s API. This action is what takes the longest time to process and would cut the time down nearly 90%. If I had the time I would hard-code that data inside the app so it wouldn&#39;t have to call and the data you see would appear nearly instantly. I am a father of 4 and spared as much time as I could to write this application and documentation.</p>
+
+<p>Thank you for taking your time to look through this project. </p>
+
+<p>If you have any questions or concerns please write me at <a href="mailto:john.spaniol@gmail.com">john.spaniol@gmail.com</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What is a champion?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Mastery points'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Other information'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Closing thoughts'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

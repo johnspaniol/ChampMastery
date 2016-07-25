@@ -1,9 +1,12 @@
 base
+rsconnect
+shiny
+curl
+stringr
+plyr
+devtools
 slidify
 slidifyLibraries
-devtools
-shiny
-XML
-knitr
-googleVis
 rCharts
+knitr
+rpart

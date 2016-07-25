@@ -1,0 +1,63 @@
+---
+title       : League of Legends
+subtitle    : Champion Mastery Lookup
+author      : John Spaniol
+job         : Data Analyst
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## What is a champion?
+
+A champion is a being or person that has been summoned to wage battle in the League of Legends on the Fields of Justice. They are the player-controlled character in League of Legends.
+
+League of Legends is competitive PvP play: a multiplayer online battle arena game (MOBA). Learn more and get started on leagueoflegends.com
+
+
+---
+
+## Mastery points
+
+As you play each champion you will earn points after the match. Eventually though practice and time you will be able to increase your skill level currently up to 7. The premise of mastery points is to show your allied and opponents just how familliar you are with that particular champion. 
+
+---
+
+## Other information
+
+The data pulled from Riot's API will also tell you other interesting facts. It can also tell you if you have unlocked a Chest for that champion this season or not.  
+
+Though not included in this data project you can also monitor the last time you played a particular champion so you won't get 'a little rusty' in your skill!
+
+here is a small sample of the output!
+
+
+```r
+head(CurrentSummoner)
+```
+
+```
+##   Champion Mastery Lvl Points Points to Next Lvl Granted Chest Tokens
+## 1 Vladimir           5  82508                  0         FALSE      0
+## 2    Brand           5  54057                  0          TRUE      0
+## 3    Teemo           5  30569                  0         FALSE      0
+## 4 Malzahar           5  29337                  0          TRUE      0
+## 5     Sion           5  24338                  0          TRUE      0
+## 6   Veigar           5  21907                  0          TRUE      0
+```
+
+---
+
+## Closing thoughts
+
+Example summoner names to use "WildTurtle" "Dyrus" "Quas"
+
+
+Though not required originally, after typing a summoner name into the text box you will have to click submit. The code currently searches each champion name retrieved by number and looks up it's name through Riot's API. This action is what takes the longest time to process and would cut the time down nearly 90%. If I had the time I would hard-code that data inside the app so it wouldn't have to call and the data you see would appear nearly instantly. I am a father of 4 and spared as much time as I could to write this application and documentation.
+
+Thank you for taking your time to look through this project. 
+
+If you have any questions or concerns please write me at john.spaniol@gmail.com
